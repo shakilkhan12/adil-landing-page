@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         btnColor: '#eaeaf3'
       },
+     
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -14,7 +14,7 @@ const Navbar = () => {
     {id: 5, title: 'about us', link: '#'},
   ])
   return (
-    <nav className="h-20 bg-white/65 !z-[9999999] fixed top-0 left-0 w-full hover:h-[100px] transition-all duration-200 group">
+    <nav className="h-20 bg-white/65 !z-[9999999] fixed top-0 left-0 w-full hover:h-[100px] transition-all duration-200 group backdrop-blur">
       <div className="px-4 max-w-[1400px] w-full mx-auto flex items-center justify-between space-x-4 h-20 group-hover:h-[100px] transition-all duration-200 relative">
         <Link href="/" className="relative w-[120px] h-[22px] group-hover:w-20 group-hover:h-3 transition-all duration-200">  <Image src={'/images/logo.svg'} fill className="object-cover" alt="logo"  /></Link>
       
