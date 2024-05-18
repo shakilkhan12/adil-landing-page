@@ -46,3 +46,6 @@
     line-height: 16px;
     display: inline-block;
 }
+.m-shadow {
+  box-shadow: 1px 1px 12px rgba(20, 20, 43, .08)
+}
