@@ -1,6 +1,9 @@
+import About from "@/components/About";
 import Cards from "@/components/Cards";
+import Contact from "@/components/Contact";
 import Content from "@/components/Content";
 import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 import ImageContainer from "@/components/ImageContainer";
 import Navbar from "@/components/Navbar";
 import PricingTable from "@/components/PricingTable";
@@ -25,6 +28,9 @@ the company to GeekPay" heading="FOR THE COMPANY" mt={true} />
 
     <PricingTable />
     <FAQ />
+    <About />
+    <Contact />
+    <Footer />
     </main>
   );
 }

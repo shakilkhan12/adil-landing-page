@@ -49,3 +49,32 @@
 .m-shadow {
   box-shadow: 1px 1px 12px rgba(20, 20, 43, .08)
 }
+.form {
+  padding: 64px 8%;
+  box-shadow: 0 4px 60px rgba(219, 218, 235, .6);
+}
+.btn {
+  color: #1a1b1f;
+  
+    margin-top: -20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2em;
+    background-color: #eaeaf3;
+    border-radius: 40px;
+  
+    padding: 20px 26px 20px 36px;
+    text-decoration: none;
+
+}
+.footer-logo {
+  border: 1px #b3b3b3;
+  border-right: 1px solid #ffffff33;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}

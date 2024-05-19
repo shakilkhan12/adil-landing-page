@@ -1,10 +1,17 @@
 'use client'
+import { createTheme, ThemeProvider } from "@mui/material";
 import "./globals.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from "react";
 
-
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#6a4fed",
+    },
+  },
+});
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,7 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body>{children}</body>
+      <body>
+        <ThemeProvider theme={theme}>
+        {children}
+        </ThemeProvider>
+        </body>
     </html>
   );
 }

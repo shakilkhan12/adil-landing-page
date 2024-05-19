@@ -13,7 +13,8 @@ const FAQ = () => {
         {id: 5, heading: 'If I need support or immediate feedback?', body: 'GeekPay team will back you up anytime 24/7. We organize our onboarding process for our customers in the way that they don`t feel lonely during and could feel the full scope of our services on the way. You can always reach out to us and send your request either over telegram @geekpayteam or email info@geekpay.co'},
     ])
   return (
-    <div className='max-w-[1400px] px-4 mx-auto'>
+    <div className='max-w-[1400px] px-4 mx-auto' data-aos="fade-up"
+    data-aos-duration="3000">
         <div className='flex flex-wrap gap-10'>
             <div className='w-full lg:w-3/12'>
                 <h1 className='text-[40px] md:text-[62px] uppercase'>faq</h1>
@@ -22,12 +23,12 @@ const FAQ = () => {
                 {state.map(item => (
                     <div key={item.id} className='w-full border-b py-4'>
                         <div className='flex items-center justify-between space-x-10' onClick={() => setActive(item.id)}>
-                            <h2 className='text-[26px]'>{item.heading}</h2>
+                            <h2 className='text-xl md:text-[26px] flex-1'>{item.heading}</h2>
                             <span className='flex w-[48px] h-[48px] rounded-full items-center justify-center bg-[#dbd6f8] cursor-pointer'>
                             {active === item.id ? <FiMinus /> : <LuPlus />}
                             </span>
                         </div>
-                         <p className={` transition-all duration-100 ${active === item.id ? 'scale-y-1 h-auto pt-6' : 'scale-y-0 h-0'}`}>{item.body}</p>
+                         <p className={` transition-all duration-100 text-sm md:text-base ${active === item.id ? 'scale-y-1 h-auto pt-6' : 'scale-y-0 h-0'}`}>{item.body}</p>
                     </div>
                 ))}
             </div>

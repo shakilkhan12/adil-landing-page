@@ -14,12 +14,13 @@ const PricingTable = () => {
         }
     ])
   return (
-    <div className="max-w-[1280px] w-full mx-auto px-4 my-[150px]">
+    <div className="max-w-[1280px] w-full mx-auto px-4 my-[150px]" data-aos="fade-up"
+    data-aos-duration="3000">
         <h3 className={`heading mb-7 w-full text-center`}>pricing</h3>
         <h1 className="text-[35px] md:text-[44px] mb-[15px] text-center">Choose plan that suits you</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-14 mt-20">
             {state.map(item => (
-                <div key={item.id} className={`m-shadow ${item.id !== 2 ? 'rounded-[24px]' :  'rounded-br-[24px] rounded-bl-[24px]'}  border  border-[#eff0f6] relative`}>
+                <div key={item.id} className={`m-shadow ${item.id !== 2 ? 'rounded-[24px]' :  'rounded-br-[24px] rounded-bl-[24px]'} ${item.id === 2 && 'mt-16 lg:mt-0'}  border  border-[#eff0f6] relative`}>
                     {item.id === 2 && <div className="bg-[#6a4fed] text-center text-white uppercase px-4 h-[60px] text-lg font-semibold absolute w-full -top-[60px] flex items-center justify-center rounded-tr-[24px] rounded-tl-[24px]">most popular</div>}
                   <div className="p-6">
                   <div className="flex items-center space-x-5">
